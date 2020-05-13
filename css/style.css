@@ -4,49 +4,130 @@
   padding: 0;
   box-sizing: border-box;
 }
+.centratura {
+  padding: 0 10%;
+}
 
+.piano {
+  background-color: green;
+  border-radius: 5px ;
+  color:white;
+  text-decoration: none;
+  padding: 6px 2px;
+}
+
+.grey {
+  color: grey;
+  font-size: 15px;
+}
 
 /* header */
 header {
   background-color: rgb(31, 57, 97);
-  /* debug */
   height: 400px;
-  /* background-image: url(../img/fluentify-jumbo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px; */
-}
-.barra {
-  height: 20%;
-}
-
-.intestazione {
-  height: 80%;
-  background-image: url(../img/fluentify-jumbo.png);
+    background-image: url(../img/fluentify-jumbo.png);
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 80% 100%
+  background-size: 75% 80%;
+}
+/* barra */
+.barra {
+  height: 13%;
+}
+
+/* logo */
+.barra img {
+  float: left;
+  width: 10%;
+  padding: 7px 0;
+  height:100%;
+}
+/* menu centrale */
+.menu, .interazioni{
+  text-align: center;
+  height: 100%;
+  display: inline-block;
+}
+
+.menu {
+  width: 60%;
+}
+.barra ul {
+  height: 100%;
+}
+
+.barra li {
+  display: inline-block;
+  height: 100%;
+}
+
+.barra li a {
+  text-decoration: none;
+  color: white;
+  font-size: 7px;
+  line-height: 9;
+  padding: 0 3px;
+}
+
+/* interazioni */
+.interazioni {
+  width: 30%;
+  float: right;
+}
+
+#login {
+  border: solid 1px white;
+  border-radius: 2px;
+}
+/* intestazione */
+.intestazione {
+  height: 80%;
+}
+.intestazione h2{
+color: white;
+width: 50%;
+position: relative;
+top: 30%;
+}
+.intestazione p {
+  position: relative;
+  top: 35%;
 }
 /* main */
 /* sezioni marginali */
 .margini {
-  background-color: grey;
+  background-color: lightgrey;
   height: 100px;
 }
 .fine > div {
   float: left;
   width: 40%;
   margin: 2%;
-  /* width: calc(100%/3); */
   /* debug */
   background-color: yellow;
   height: 200px;
 }
+
+/* sezione marginale iniziale */
+
+.margini.top {
+  text-align: center;
+  position: relative;
+}
+
+.iniziale {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
 /* parte principale */
 .riga {
+  border-bottom: solid 1px grey;
+  /* debug */
   height: 500px;
   background-color: red;
-  border-bottom: solid 1px grey;
 }
 .riga::after {
   content: "";
@@ -57,8 +138,6 @@ header {
   float: left;
   width: 30%;
   margin: 2%;
-  /* width: calc(100%/3); */
-  /* debug */
   background-color: yellow;
   height: 200px;
 }
